@@ -28,10 +28,9 @@ int missingNumber(int a[], int n)
     // Your code goes here
     int k,i;
     k=(n*(n+1)/2);
-    int sum=0;
     for(i=0;i<n-1;i++)
     {
-        sum +=a[i];
+        k-=a[i];
     }
-    return k-sum;
+    return k;
 }
