@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void bubble(int a[],int n)
+void bubble(vector<int> &a,int n)
 {
 for(int i=0;i<n-1;i++)
 {
@@ -36,7 +36,7 @@ int main()
     {
         cout<<a[i]<<" ";
     }
-    bubble(&a,n);
+    bubble(a,n);
     cout<<endl<<"sorted form"<<endl;
     for(int i=0;i<n;i++)
     {
